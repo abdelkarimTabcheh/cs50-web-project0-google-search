@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="topleft">
+                <a href="index.html">
+                    <span class="g1">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
+                </a>
+            </div>
+            <nav class="top-right">
+                <a href="#">Gmail</a>
+                <a href="images.html">Images</a>
+                <button class="icon-btn" title="Apps">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <rect x="3" y="3" width="4" height="4" rx="1"/><rect x="10" y="3" width="4" height="4" rx="1"/><rect x="17" y="3" width="4" height="4" rx="1"/>
+                        <rect x="3" y="10" width="4" height="4" rx="1"/><rect x="10" y="10" width="4" height="4" rx="1"/><rect x="17" y="10" width="4" height="4" rx="1"/>
+                        <rect x="3" y="17" width="4" height="4" rx="1"/><rect x="10" y="17" width="4" height="4" rx="1"/><rect x="17" y="17" width="4" height="4" rx="1"/>
+                    </svg>
+                </button>
+                <button class="signin">Sign in</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main advanced-main">
+        <div class="advanced-container">
+            <h1 class="advanced-title">Advanced Search</h1>
+            
+            <form action="https://www.google.com/search" method="get" class="advanced-form">
+                <div class="form-section">
+                    <h2>Find pages with...</h2>
+                    <div class="form-row">
+                        <label for="as_q">all these words:</label>
+                        <input type="text" name="as_q" id="as_q" placeholder="Type the important words: tricolor rat terrier">
+                    </div>
+                    <div class="form-row">
+                        <label for="as_epq">this exact word or phrase:</label>
+                        <input type="text" name="as_epq" id="as_epq" placeholder='Put exact words in quotes: "rat terrier"'>
+                    </div>
+                    <div class="form-row">
+                        <label for="as_oq">any of these words:</label>
+                        <input type="text" name="as_oq" id="as_oq" placeholder="Type OR between all the words you want: miniature OR standard">
+                    </div>
+                    <div class="form-row">
+                        <label for="as_eq">none of these words:</label>
+                        <input type="text" name="as_eq" id="as_eq" placeholder='Put a minus sign just before words you don\'t want: -rodent, -"Jack Russell"'>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Then narrow your results by...</h2>
+                    <div class="form-row">
+                        <label for="as_sitesearch">site or domain:</label>
+                        <input type="text" name="as_sitesearch" id="as_sitesearch" placeholder="Search one site (like wikipedia.org) or limit your results to a domain like .edu, .org or .gov">
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Advanced Search</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">Lebanon</div>
+            <div class="footer-right">
+                <a href="#">About</a><a href="#">Advertising</a><a href="#">Business</a><a href="#">How Search works</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
